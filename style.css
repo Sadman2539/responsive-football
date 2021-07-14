@@ -1,0 +1,309 @@
+/* google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* common styles */
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+header{
+    background-color: rgb(45, 37, 160);
+    height: 677px;
+}
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 42px;
+    height: 44px;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav ul li{
+    list-style: none;
+    margin-right:36px;
+    
+}
+nav ul li:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    transition: 0.2;
+    
+}
+.menu-bar{
+    visibility: hidden;
+}
+p{
+    color: #6C6C6C;
+}
+footer{
+    background-color: white;
+}
+
+/* header section  */
+.link-button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+    color: #FFFFFF;
+    background-color: #E02C6D;
+    transition: 0.3s ease-in-out;
+    
+}
+.link-button:hover,.login-button .font-awesome-icon{
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: 1px solid #E02C6D;
+    transform: translateX(3px);
+
+}
+.login-button{
+    width: 123px;
+    height: 100%;
+}
+#login-icon{
+    margin-right: 8px;
+}
+.welcome-page{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.welcome-text{
+    display: flex;
+    flex-direction: column;
+    width: 485px;
+}
+.welcome-text h1{
+    font-family: Poppins;
+font-style: normal;
+font-weight: 700;
+font-size: 64px;
+line-height: 80px;
+color: #FFFFFF;
+margin-bottom: 0;
+}
+.watch-link{
+    width: 168px;
+    
+}
+.font-awesome-icon{
+    margin-left: 8px;
+}
+
+.banner-img img:hover{
+    transform: translateX(-20px);
+    transition: 1s ease-in-out;
+}
+
+/* main section style  */
+.players{
+    margin: 5% 10% 5% ;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+justify-items: center;
+grid-row-gap: 45px;
+grid-column-gap: 30px;
+}
+.player{
+    box-sizing: border-box;
+    width: 330px;
+    height: 456px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    box-shadow: 0px 0px 40px 
+  rgba(0, 0, 0, 0.15);
+    
+}
+.player-text{
+    overflow: hidden;
+}
+.player-img img{
+    width: 100%;
+}
+
+/* poll section  */
+.poll-area{
+margin: 0 10%  5%;
+
+}
+fieldset{    
+    border: 2px solid #000000;
+    box-shadow: 0px 0px 40px
+  rgba(0, 0, 0, 0.15);
+  
+}
+legend{
+    color: #000000;
+}
+.options{
+    display: flex; 
+    justify-content: space-between;
+    
+}
+.options label{
+    padding: 2%;
+    background-color: rgb(252, 244, 244);
+    box-shadow: 0px 0px 40px
+    rgba(0, 0, 0, 0.15);
+    font-weight: bold;
+    
+}
+fieldset button{
+    margin-top: 2%;
+    padding: 5px 15px;
+    box-shadow: 0px 0px 40px 
+    rgba(0, 0, 0, 0.15);
+  
+}
+
+/* highlights section style  */
+#highlights-section{
+display: flex;
+align-items: center;
+width: 80%;
+margin: 0 10% 10%;
+}
+
+
+/* tranding section style  */
+#tranding-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 40px 
+  rgba(0, 0, 0, 0.15);
+  margin: 0 5% 10%;
+  padding-bottom: 20px;
+}
+#tranding-section h1{
+   letter-spacing: 10px;
+}
+iframe{
+    padding-right: 10px;
+}
+
+/* footer style     */
+#footer-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.social-icon{
+    font-size: 16px;
+    margin-right: 14px;
+    padding: 8px;
+    background-color: rgb(230, 230, 230);
+    border-radius: 50%;
+    color: rgb(102, 102, 102);
+}
+footer p{
+    font-size: 18px;
+    color: black;
+}
+
+/* mobile responsive Media Queries   */
+@media only screen and (max-width:688px) {
+   header{
+    height: 695px;
+    width: 100%;
+   }
+   nav{
+    align-items: center;
+       justify-content:space-around;
+
+   }
+    nav ul{
+       display: none;
+    }
+    .menu-bar{
+        visibility: visible;
+    }
+    .welcome-page{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .welcome-text{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+         width: 278px;
+                
+    }
+    .welcome-text h1{
+        font-size: 36px;
+        line-height: 50px;
+    }
+    .watch-link{
+        margin: 5% 0 15%;
+        
+    }
+    .welcome-page img{
+      width: 90%;
+       padding: 0 5%;
+    }
+    .players{
+        margin: 0;
+        
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        
+    }
+    .poll-area{
+        margin: 0 5%  5%;
+    }
+
+
+    #highlights-section{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        }
+        .highlights-img img{
+            width: 328px;
+        }
+        #tranding-section{
+          margin: 0 ;
+          padding: 0 5%;
+          
+        }
+        #tranding-video-area{
+            display: flex;
+            flex-direction: column;
+        }
+        iframe{
+            width: 100%;
+            
+        }
+       
+        #footer-logo img{
+            width: 60%;
+            margin: 0 10%;
+        }
+}
+
+/* tab responsive Media Queries   */
+@media only screen and  (min-width:688px) and (max-width:992px){
+    .players{
+        margin: 0;
+        
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        
+    }
+}
